@@ -1,0 +1,56 @@
+<html>
+<head>
+<title> TVM Calculator </title>
+<meta name="generator" content="Frontier 5.0.2b19 MacOS"><script src='calc.js' language='JavaScript'></script>
+<link rel='Stylesheet' href='calc.css'>
+</head>
+<body bgcolor="#00597d" alink="#ff0000" vlink="#660066" link="#0000FF" text="#000000">
+<div>
+<form name="TVMCalc">
+<table border="0" cellspacing="0" cellpadding="6" bgcolor="#CCCCCC">
+	<tr>
+		<td align="center" colspan="4" bgcolor="#8a0304"><span class="whitecomic">MMA TVM Calculator</span></td>
+	</tr>
+	<tr>
+		<td align="right">PV:</td>
+		<td>$<input type="text" name="PVInput" size="8" maxlength="8"></td>
+		<td align="right">I:</td>
+		<td><input type="text" name="NRInput" size="8" maxlength="8"> %</td>
+	</tr>
+	<tr>
+		<td align="right">PMT:</td>
+		<td>$<input type="text" name="PMTInput" size="8" maxlength="8"></td>
+		<td align="right">N:</td>
+		<td><input type="text" name="NPInput" size="8" maxlength="8"></td>
+	</tr>
+	<tr>
+		<td align="right">FV:</td>
+		<td>$<input type="text" name="FVInput" size="8" maxlength="8"></td>
+		<td colspan="2">
+		<select name="CInput">
+			<option value="0" selected>Annual</option>
+			<option value="1">Semiannual</option>
+			<option value="2">Quarterly</option>
+			<option value="3">Monthly</option>
+			<option value="4">Weekly</option>
+			<option value="5">Daily</option>
+		</select>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="4" align="center">
+		<input type="button" name="PV" value="  PV   " onClick="findPV(this.form)">
+		<input type="button" name="PV" value="  PMT  " onClick="findPMT(this.form)">
+		<input type="button" name="PV" value="  FV   " onClick="findFV(this.form)">
+		<input type="button" name="PV" value="  I    " onClick="findNR(this.form)">
+		<input type="button" name="PV" value="  N    " onClick="findNP(this.form)">
+		</td>
+	</tr>
+</table>
+</form>
+<input class="info" type="text" value="PV: Present Value<br>PMT: Payments per pay period<br>FV: Future value<br>" class="field left" readonly>
+</div>
+
+
+</body>
+</html>
